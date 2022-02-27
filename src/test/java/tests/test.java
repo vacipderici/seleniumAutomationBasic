@@ -43,6 +43,14 @@ public class test {
         WebElement submitButton = driver.findElement(new By.ByCssSelector("button.btn"));
         submitButton.click();
 
+        WebElement nameText = driver.findElement(By.xpath("//div/p[@id='name']"));
+        String name = nameText.getText();
+        System.out.println(name);
+
+        WebElement emailText = driver.findElement(By.xpath("//div/p[@id='email']"));
+        String emaill = emailText.getText();
+        System.out.println(emaill);
+
 
 
 
