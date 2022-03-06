@@ -20,7 +20,7 @@ public class alert {
 
         driver.findElement(By.id("alertButton")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver,2);
+        WebDriverWait wait = new WebDriverWait(driver,5);
 
         wait.until(ExpectedConditions.alertIsPresent());
 
